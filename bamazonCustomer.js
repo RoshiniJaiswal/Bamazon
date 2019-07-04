@@ -1,6 +1,7 @@
+// reuiring the packages from mysql and inquirer
 var mysql = require("mysql");
 var inquirer = require("inquirer");
-
+// creating a connection to sql so it can be connected to a local host
 var connection = mysql.createConnection({
     host: "localhost",
 
@@ -10,7 +11,7 @@ var connection = mysql.createConnection({
     // Your username
     user: "root",
 
-    // Your password
+    // Your password(used my SQL password)
     password: "TeAmo1994",
     database: "bamazon"
 });
